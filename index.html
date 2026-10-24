@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Assignment 8.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Dashboard Header -->
+        <header class="header">
+            <h1>Dash<span>Board</span></h1>
+            <div class="profile">
+                <span>Welcome back!</span>
+                <div class="avatar">S</div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>MENU</h3>
+            <a href="#" class="active">▦ Dashboard</a>
+            <a href="#stats">▤ Analytics</a>
+            <a href="#activity">◷ Recent Activity</a>
+            <a href="#settings">⚙ Settings</a>
+            <div class="sidebar-bottom">
+                <p>Dashboard v1.0</p>
+                <p>Assignment 8.1</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-heading">
+                <div>
+                    <h2>Dashboard Overview</h2>
+                    <p>Here's what's happening with your website today.</p>
+                </div>
+                <button onclick="window.print()">Export Report</button>
+            </div>
+
+            <!-- Statistic Cards -->
+            <section class="stats-grid" id="stats">
+
+                <article class="stat-card purple">
+                    <div class="stat-top">
+                        <span>Total Users</span>
+                        <span class="stat-icon">👥</span>
+                    </div>
+                    <h2>2,450</h2>
+                    <p>↑ 12% from last month</p>
+                </article>
+
+                <article class="stat-card blue">
+                    <div class="stat-top">
+                        <span>Total Revenue</span>
+                        <span class="stat-icon">₹</span>
+                    </div>
+                    <h2>₹48,500</h2>
+                    <p>↑ 8.5% from last month</p>
+                </article>
+
+                <article class="stat-card green">
+                    <div class="stat-top">
+                        <span>Orders</span>
+                        <span class="stat-icon">🛍️</span>
+                    </div>
+                    <h2>1,280</h2>
+                    <p>↑ 6.2% from last month</p>
+                </article>
+
+                <article class="stat-card orange">
+                    <div class="stat-top">
+                        <span>Pending Tasks</span>
+                        <span class="stat-icon">📋</span>
+                    </div>
+                    <h2>24</h2>
+                    <p>↓ 3 tasks from yesterday</p>
+                </article>
+
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="activity-card" id="activity">
+                <h2>Recent Activity</h2>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Activity</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Priya Sharma</td>
+                                <td>New registration</td>
+                                <td>21 Oct 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Arjun Verma</td>
+                                <td>New order</td>
+                                <td>21 Oct 2026</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Neha Singh</td>
+                                <td>Payment received</td>
+                                <td>20 Oct 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Rahul Kumar</td>
+                                <td>Account update</td>
+                                <td>20 Oct 2026</td>
+                                <td><span class="status review">In Review</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer id="settings">
+                © 2026 Dashboard. Created for Assignment 8.1.
+            </footer>
+        </main>
+
+    </div>
+
+</body>
+</html>
